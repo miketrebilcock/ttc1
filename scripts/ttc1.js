@@ -208,7 +208,7 @@
     // Determine how many data points to keep based on the placeholder's initial size;
     // this gives us a nice high-res plot while avoiding more than one point per pixel.
 
-    var maximum = container.outerWidth() / 2 || 300;
+    var maximum = container.outerWidth() *2 || 300;
 
     //
 
@@ -363,7 +363,7 @@
         },
         yaxis: {
             min: 0,
-            max: 125
+            max: 130
         },
         legend: {
             show: true
