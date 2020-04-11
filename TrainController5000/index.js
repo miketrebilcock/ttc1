@@ -7,7 +7,7 @@ const trains = {}
 function trainPing(request, response) {
     console.log('recieved', request.body)
     trains[request.body.macAddress] = request.body
-    trains[request.body.macAddress].ip = request.ip
+    trains[request.body.macAddress].ip = request.connection.remoteAddress
     response.send('ok')
 }
 
